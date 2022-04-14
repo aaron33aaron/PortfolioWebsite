@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 //import { AppWrap } from '../../constants';
 import { images } from '../../constants';
 
+import { AppWrap } from '../../wrapper';
+
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -68,7 +70,7 @@ const Header = () => (
       className="app__header-circles"
     >
       { /* Populating with technology images */ }
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
+      {[images.javascript, images.eth, images.react].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
@@ -77,4 +79,4 @@ const Header = () => (
   </div>
 );
 
-export default Header;
+export default AppWrap(Header, 'home');
