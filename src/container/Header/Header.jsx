@@ -40,6 +40,10 @@ const Header = () => (
           <p className="p-text">Web 3.0 Developer</p>
           <p className="p-text">Freelancer</p>
         </div>
+
+        <div className="tag-cmp app__flex">
+          <p className="p-text">Advanced Diploma in Computer Programming and Analysis</p>
+        </div>
       </div>
     </motion.div>
 
